@@ -1,16 +1,16 @@
 import React from 'react'
-import Navbar from './components/navbar/Navbar'
-import Main from './pages/main/Main'
-import Footer from './components/footer/Footer'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import HomePage from './pages/homePage/HomePage'
 
 const App = () => {
-     return (
-          <>
-               <Navbar />
-               <Main />
-               <Footer />
-          </>
-     )
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='*' element={<Navigate to='/' replace />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App
