@@ -1,9 +1,11 @@
 .appRightContainer {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10vh;
+  position: fixed;
+  right: 100px;
+  transform: translate(50%);
 }
 
 .appRightText {

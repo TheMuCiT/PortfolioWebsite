@@ -2,10 +2,10 @@ import React from 'react'
 
 import './appRight.css'
 
-const AppRight = () => {
+const AppRight = ({ title }) => {
   return (
     <div className='appRightContainer'>
-      <div className='appRightText'>ABOUT ME</div>
+      <div className='appRightText'>{title}</div>
     </div>
   )
 }

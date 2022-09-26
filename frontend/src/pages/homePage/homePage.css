@@ -7,24 +7,22 @@
 }
 
 .appLeft {
-  flex: 20;
+  flex: 15;
   height: 100%;
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .appMain {
-  flex: 60;
+  flex: 70;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-left: 1px solid red;
-  border-right: 1px solid red;
 }
 
 .appRight {
-  max-width: 250px;
-  flex: 20;
+  max-width: 200px;
+  flex: 15;
 }
 
 .appMainTitleContainer {
@@ -55,4 +53,17 @@
   color: var(--color-text-main);
   font-weight: 400;
   font-size: 1.8vw;
+}
+
+.appMainProjectContainer {
+  width: 100%;
+  max-width: 1020px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 20vh;
+}
+
+.appMainProjectItem {
+  width: 100%;
 }
