@@ -1,39 +1,29 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import AppLeft from '../../components/appLeft/AppLeft'
 import AppRight from '../../components/appRight/AppRight'
 
-import './projectPage.css'
+import data from '../../assets/data/portfolio.json'
 
-// const testData = [
-//   {
-//     size: 1,
-//     offset: 0,
-//     left: 0,
-//   },
-//   {
-//     size: 1,
-//     offset: 10,
-//     left: 1,
-//   },
-//   {
-//     size: 1,
-//     offset: 20,
-//     left: 0,
-//   },
-//   {
-//     size: 1,
-//     offset: 30,
-//     left: 1,
-//   },
-// ]
+import './projectPage.css'
 
 const ProjectPage = () => {
   const navigate = useNavigate()
+  const params = useParams()
+  const id = params.Id
+
+  useEffect(() => {
+    window.scrollTo({ behavior: 'auto', top: 0 })
+  }, [navigate])
+
+  // useEffect(() => {
+  //   setReloadData(!reloadData)
+  // }, [id])
 
   const goBack = () => {
     navigate(-1)
   }
+
   return (
     <div className='project'>
       <div className='projectLeft'>
@@ -45,25 +35,49 @@ const ProjectPage = () => {
           </div>
 
           <div className='projectTitleContainer'>
-            <div className='projectTitle'>Project Title</div>
-            <div className='projectSubTitle'>Project Title</div>
-            <div className='projectText'>
-              Passionate React developer with two years of experience in a freelancer industrial and a strong focus
-              on front-end development with a willingness to learn and master Back-end development and testing.
-              Expertise in web and mobile app development, with a particular interest in using React to create
-              high-performance user interfaces.
-            </div>
+            <div className='projectTitle'>{data[id].title}</div>
+            <div className='projectSubTitle'>{data[id].supTitle}</div>
+            <div className='projectText'>{data[id].about}</div>
+
+            {data[id].linkTitle && (
+              <>
+                <div className='projectLinkTitle'>{data[id].linkTitle}</div>
+                <a href={data[id].link} target='_blank' rel='noreferrer' className='projectLink'>
+                  {data[id].linkText}
+                </a>
+
+                {data[id].more && (
+                  <>
+                    <div className='projectLinkTitle'>View more on GitHub</div>
+                    <a href='https://github.com/TheMuCiT' target='_blank' rel='noreferrer' className='projectLink'>
+                      GitHub
+                    </a>
+                  </>
+                )}
+              </>
+            )}
           </div>
         </div>
       </div>
 
       <div className='projectRight'>
         <AppRight title={'ABOUT PROJECT'} />
-        <div className='projectRightContainer'>
-          <img src={'./images/1.png'} alt='' className='projectImage' style={{ left: 0, top: 0 }} />
-          <img src={'./images/2.png'} alt='' className='projectImage' style={{ right: 0, top: '15%' }} />
-          <img src={'./images/3.png'} alt='' className='projectImage' style={{ left: 0, bottom: '15%' }} />
-          <img src={'./images/4.png'} alt='' className='projectImage' style={{ right: 0, bottom: 0 }} />
+        <div className='projectRightContainer' style={{ height: data[id].pageSize }}>
+          {data[id].images.map((item, index) => (
+            <div className='' key={index}>
+              {console.log(item)}
+              <img
+                src={item.image}
+                alt=''
+                className={item.sideLeft ? 'projectImage projectImageLeft' : 'projectImage'}
+                style={{ top: item.offset, width: `calc(${item.size}% - 25px)` }}
+              />
+            </div>
+          ))}
+          {/* <img src={'./images/1.png'} alt='' className='projectImage' style={{ left: 0, top: 0 }} /> */}
+          {/* <img src={'./images/2.png'} alt='' className='projectImage' style={{ right: 0, top: '15%' }} /> */}
+          {/* <img src={'./images/3.png'} alt='' className='projectImage' style={{ left: 0, bottom: '15%' }} /> */}
+          {/* <img src={'./images/4.png'} alt='' className='projectImage' style={{ right: 0, bottom: 0 }} /> */}
         </div>
       </div>
     </div>

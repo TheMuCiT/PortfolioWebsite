@@ -11,15 +11,24 @@
 }
 
 .appLeftItem {
-  border: 1px solid var(--color-text-main);
   width: 3vw;
-  border-radius: 50%;
-  aspect-ratio: 1 / 1;
+  min-width: 3vw;
+  height: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.appLeftItem:hover {
+  cursor: pointer;
+}
+
 .appLeftItemIcon {
   width: 2.9vw;
+  min-width: 45px;
+}
+
+.appLeftItemIcon:hover {
+  width: 3.1vw;
+  min-width: 50px;
 }

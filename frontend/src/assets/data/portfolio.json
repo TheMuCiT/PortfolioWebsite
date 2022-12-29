@@ -1,0 +1,267 @@
+[
+  {
+    "id": 1,
+    "title": "Bakish",
+    "supTitle": "Breed Shop Mobile Application",
+    "about": "Bakish is the first mobile application I created by myself after I completed more than 5 production-ready applications through tutorials. For this project, I used all my gained knowledge to create an application for the small breed shop. This app is similar to bolt food or uber eats but concentrated in one shop. The design is created with a vision that it can be easily changed for a different shop. In this project, I just react native with typescript. I implemented AWS authentication, and amplify database. For data management, I use Apollo Client. To make it fully work I used a lot of additional packages such as React Navigation, Stripe, Cognito, days, google maps, google place autocomplete, and others.",
+    "pageSize": "220vh",
+    "images": [
+      {
+        "image": "../images/1.png",
+        "offset": 0,
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/2.png",
+        "offset": "15%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/3.png",
+        "offset": "35%",
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/4.png",
+        "offset": "45%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/1.png",
+        "offset": "55%",
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/2.png",
+        "offset": "65%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/3.png",
+        "offset": "75%",
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/4.png",
+        "offset": "90%",
+        "sideLeft": false,
+        "size": 50
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "PawPaw Pet Age Tracker",
+    "supTitle": "Mobile Application To Track Pet Age",
+    "about": "We like to present a modern mobile app, centered around your pet's age tracking. The app provides simple, professional, and thematic elements which are both detailed yet easy to navigate.    Why PawPaw Tracker? - Easy to Navigate    - Easy to add and edit information    - Always know your pet's age    - Modern App Are you tired of hard-to-use apps PawPaw Tracker is created to provide the best user experience for our users. From adding information to adding images of your lovely pet. Once, you enter PawPaw Tracker you will be navigated to the first screen, where you will provide all the necessary information about your pet friend, when you have done that step, it will take only one button click and you can start fully enjoying PawPaw Tracker.",
+    "linkTitle": "You can view the app in Google Play",
+    "link": "https://play.google.com/store/apps/details?id=com.personaltouchlt.pawpawtracker",
+    "linkText": "Google Play",
+    "pageSize": "180vh",
+    "images": [
+      {
+        "image": "../images/paw1.png",
+        "offset": 0,
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/paw2.png",
+        "offset": "15%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/paw3.png",
+        "offset": "45%",
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/paw4.png",
+        "offset": "50%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/paw5.png",
+        "offset": "70%",
+        "sideLeft": true,
+        "size": 50
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Runo coffee",
+    "supTitle": "Mobile Application For The Coffee",
+    "about": "",
+    "pageSize": "220vh",
+    "images": [
+      {
+        "image": "../images/1.png",
+        "offset": 0,
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/2.png",
+        "offset": "15%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/3.png",
+        "offset": "35%",
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/4.png",
+        "offset": "45%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/1.png",
+        "offset": "55%",
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/2.png",
+        "offset": "65%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/3.png",
+        "offset": "75%",
+        "sideLeft": true,
+        "size": 50
+      },
+      {
+        "image": "../images/4.png",
+        "offset": "90%",
+        "sideLeft": false,
+        "size": 50
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "STOTIES 10",
+    "supTitle": "Real Estate Website",
+    "about": "Stoties 10 project was created for one of my friend's companies. Together with the design, we tried to make it as good as we can. I implemented more than 30 animations in the project to make it look very user-friendly. For this real estate project, we create a custom SVG selection to make the building plan interactive with the user to display the most important information to them.",
+    "linkTitle": "You can view the website",
+    "link": "https://stoties10.lt/",
+    "linkText": "View",
+    "pageSize": "160vh",
+    "images": [
+      {
+        "image": "../images/stoties1.png",
+        "offset": 0,
+        "sideLeft": true,
+        "size": 100
+      },
+      {
+        "image": "../images/stoties2.png",
+        "offset": "25%",
+        "sideLeft": false,
+        "size": 80
+      },
+      {
+        "image": "../images/stoties3.png",
+        "offset": "57%",
+        "sideLeft": true,
+        "size": 100
+      },
+      {
+        "image": "../images/stoties4.png",
+        "offset": "85%",
+        "sideLeft": false,
+        "size": 100
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "IMO INVEST",
+    "supTitle": "Real Estate Website",
+    "about": "One of the first project I created as a freelance was an IMO-invest website. For this project, I have to implement a lot of features, to make a customer satisfied I create animations back then it was, a big challenge, for me but with some extra time spent I managed to create a clean and modern design.    ",
+    "linkTitle": "You can view the website",
+    "link": "https://imo-invest.com/",
+    "linkText": "View",
+    "pageSize": "160vh",
+    "images": [
+      {
+        "image": "../images/imo0.png",
+        "offset": 0,
+        "sideLeft": true,
+        "size": 100
+      },
+      {
+        "image": "../images/imo1.png",
+        "offset": "30%",
+        "sideLeft": false,
+        "size": 100
+      },
+      {
+        "image": "../images/imo2.png",
+        "offset": "60%",
+        "sideLeft": true,
+        "size": 100
+      },
+      {
+        "image": "../images/imo3.png",
+        "offset": "80%",
+        "sideLeft": false,
+        "size": 100
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "PANDALAN",
+    "supTitle": "Other Project",
+    "about": "Pandalan is one of many projects I created for customers. I created more than 20 websites for the NFT project and landing pages for the companies. After a discussion with the designer, I implemented animation for the website to make it look alive and more attractive to visitors.",
+    "linkTitle": "You can view websites",
+    "link": "https://pandalan-hukuk.netlify.app/",
+    "linkText": "View",
+    "pageSize": "150vh",
+    "more": true,
+    "images": [
+      {
+        "image": "../images/panda1.png",
+        "offset": 0,
+        "sideLeft": true,
+        "size": 100
+      },
+      {
+        "image": "../images/panda2.png",
+        "offset": "25%",
+        "sideLeft": false,
+        "size": 100
+      },
+      {
+        "image": "../images/panda3.png",
+        "offset": "50%",
+        "sideLeft": true,
+        "size": 100
+      },
+      {
+        "image": "../images/panda3.png",
+        "offset": "75%",
+        "sideLeft": true,
+        "size": 100
+      }
+    ]
+  }
+]

@@ -26,7 +26,7 @@
 }
 
 .appMainTitleContainer {
-  margin-top: 40vh;
+  margin-top: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,23 +36,83 @@
 .appMainTitle {
   color: var(--color-text-main);
   font-weight: 400;
-  font-size: 8vw;
+  font-size: 12vw;
   margin-bottom: 20px;
+  font-family: 'Caramel', cursive;
+  cursor: none;
 }
 
 .appMainText {
   color: var(--color-text-main);
   font-weight: 400;
   font-size: 2.42vw;
+  cursor: none;
 }
 
 .appMainAboutMe {
-  margin-top: 60vh;
+  margin-top: 80vh;
 
+  position: relative;
+}
+
+.appMainAboutMeText {
   text-align: center;
   color: var(--color-text-main);
   font-weight: 400;
   font-size: 1.8vw;
+  z-index: 1;
+}
+
+.appMainAboutMeMobileTitle {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  font-weight: 900;
+  z-index: -2;
+  color: var(--color-text-main);
+  opacity: 0.5;
+  white-space: nowrap;
+}
+
+.appMainAboutMe:hover {
+  cursor: none;
+  display: flex;
+}
+
+.appMainAboutMeText:hover {
+  cursor: none;
+  font-size: 1.81vw;
+}
+
+.appMainSkill {
+  margin-top: 80vh;
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.appMainSkillListTitle {
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: var(--color-text-main);
+  margin-bottom: 45px;
+  cursor: none;
+}
+
+.appMainSkillListItem {
+  margin-bottom: 40px;
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: var(--color-text-main);
+  max-width: 200px;
+  cursor: none;
+}
+
+.appMainSkillListItem:hover,
+.appMainSkillListTitle:hover {
+  filter: blur(4px);
 }
 
 .appMainProjectContainer {
@@ -61,9 +121,87 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  margin-top: 20vh;
+  margin-top: 80vh;
 }
 
 .appMainProjectItem {
   width: 100%;
+  box-shadow: 4px 7px 30px 5px rgba(87, 52, 52, 0.25);
+  cursor: pointer;
+}
+
+.appMainProjectItem:hover {
+  transform: scale(1.02);
+}
+
+.anim {
+  background-color: red;
+  width: 100px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .appMainSkill {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .appMainSkillList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .appMainSkillListMobile {
+    grid-column: 1/ 3;
+  }
+  .appMainSkillListItem {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .appLeft,
+  .appRight {
+    display: none;
+  }
+  .appMainProjectContainer {
+    width: calc(100% - 40px);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .appMainTitle {
+    font-size: 18vw;
+  }
+
+  .appMainText {
+    font-size: 3.5vw;
+  }
+
+  .appMainAboutMeText {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  .appMainAboutMeText:hover {
+    font-size: 20px;
+  }
+
+  .appMainSkillListTitle {
+    font-size: 24px;
+  }
+
+  .appMainSkillListItem {
+    font-size: 20px;
+  }
+
+  .appMainAboutMe,
+  .appMainSkill,
+  .appMainProjectContainer {
+    margin-top: 60vh;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .appMainSkillListTitle {
+    font-size: 22px;
+    text-align: center;
+  }
 }

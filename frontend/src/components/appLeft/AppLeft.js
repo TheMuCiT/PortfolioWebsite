@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import { ReactComponent as LinkedInSVG } from '../../icons/LinkedIn.svg'
 import { ReactComponent as GithubSVG } from '../../icons/Github.svg'
@@ -6,8 +6,11 @@ import { ReactComponent as UpworkSVG } from '../../icons/Upwork.svg'
 import { ReactComponent as FiverrSVG } from '../../icons/Fiverr.svg'
 
 import './appLeft.css'
+import { DataContext } from '../../contexts/DataContext'
 
 const AppLeft = () => {
+  const { sideShow } = useContext(DataContext)
+
   const openLinkedIn = () => {
     window.open('https://www.linkedin.com/in/karolisvilimas/')
   }
@@ -21,7 +24,7 @@ const AppLeft = () => {
     window.open('https://www.upwork.com/freelancers/~015f01f9f5844e868c')
   }
   return (
-    <div className='appLeftContainer'>
+    <div className='appLeftContainer' style={{ display: sideShow ? 'flex' : 'none' }}>
       <div className='appLeftItem' onClick={openLinkedIn}>
         <LinkedInSVG className='appLeftItemIcon' />
       </div>
