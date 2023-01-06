@@ -1,57 +1,52 @@
 import React from 'react'
 
-import { ReactComponent as DiscordSVG } from '../../icons/Discord.svg'
-import { ReactComponent as TwitterSVG } from '../../icons/Twitter.svg'
-import { ReactComponent as MSVG } from '../../icons/M.svg'
+import { ReactComponent as Upwork1SVG } from '../../icons/Upwork1.svg'
+import { ReactComponent as GitHub1SVG } from '../../icons/GitHub1.svg'
+import { ReactComponent as LinkedIn1SVG } from '../../icons/LinkedIn1.svg'
 
 import './footer.css'
 const Footer = () => {
-     const handleDiscord = () => {
-          window.open('')
-     }
+  const handleUpwork = () => {
+    window.open('https://www.upwork.com/freelancers/~015f01f9f5844e868c')
+  }
 
-     const handleTwitter = () => {
-          window.open('')
-     }
+  const handleGitHub = () => {
+    window.open('https://github.com/TheMuCiT')
+  }
 
-     const handleM = () => {
-          window.open('')
-     }
-     return (
-          <div className='footerBC componentFirst'>
-               <div className='footerMain componentSecond'>
-                    <div className='footerMainLeft'>
-                         <div className='footerMainLeftLogo'>Logo</div>
-                         <div className='footerMainLeftText'>textUnderTitle</div>
-                         <div className='footerMainLeftLinks'>
-                              <TwitterSVG className='footerIcon' onClick={handleTwitter} />
-                              <DiscordSVG className='footerIcon' onClick={handleDiscord} />
-                              <MSVG className='footerIcon' onClick={handleM} />
-                         </div>
-                         <div className='footerMainLeftCopy'>Ⓒ 2021 - LOGO all rights reserved</div>
-                    </div>
-                    <div className='footerMainRight'>
-                         <div className='footerMainRightItem'>
-                              <div className='footerMainRightItemTitle'>About</div>
-                              <div className='footerMainRightItemText'>Links</div>
-                         </div>
-                         <div className='footerMainRightItem'>
-                              <div className='footerMainRightItemTitle'>Listing</div>
-                              <div className='footerMainRightItemText'>Links</div>
-                         </div>
-                         <div className='footerMainRightItem'>
-                              <div className='footerMainRightItemTitle'>Explore</div>
-                              <div className='footerMainRightItemText'>Join Discord</div>
-                         </div>
-                         <div className='footerMainRightItem'>
-                              <div className='footerMainRightItemTitle'>Get help</div>
-                              <div className='footerMainRightItemText'>Join Discord</div>
-                         </div>
-                    </div>
-                    <div className='footerMainLeftCopyMobile'>Ⓒ 2021 - TrustMarket all rights reserved</div>
-               </div>
+  const handleLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/karolisvilimas/')
+  }
+
+  //   const handleFiverr = () => {
+  //      window.open('https://www.fiverr.com/feikkonas?up_rollout=true')
+  //    }
+
+  return (
+    <div className='footerBC componentFirst'>
+      <div className='footerMain componentSecond'>
+        <div className='footerMainLeft'>
+          <div className='footerMainLeftLogo'>Karolis Vilimas</div>
+          <div className='footerMainLeftText'>
+            A React Native Developer focused on the best user experience and high-performance mobile application
+            development.
           </div>
-     )
+          <div className='footerMainLeftCopy'>Ⓒ Copyright 2022 - Made by Karolis Vilimas</div>
+        </div>
+        <div className='footerMainRight'>
+          <div className='footerMainRightItem'>
+            <div className='footerMainRightItemTitle'>Contact me</div>
+            <div className='footerMainRightItemIcons'>
+              <Upwork1SVG className='footerIcon' onClick={handleUpwork} />
+              <GitHub1SVG className='footerIcon' onClick={handleGitHub} />
+              <LinkedIn1SVG className='footerIcon' onClick={handleLinkedIn} />
+            </div>
+          </div>
+        </div>
+        <div className='footerMainLeftCopyMobile'>Ⓒ Copyright 2022 - Made by Karolis Vilimas</div>
+      </div>
+    </div>
+  )
 }
 
 export default Footer

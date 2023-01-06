@@ -10,6 +10,7 @@
   flex: 15;
   height: 100%;
   max-width: 200px;
+  position: relative;
 }
 
 .appMain {
@@ -21,8 +22,9 @@
 }
 
 .appRight {
-  max-width: 200px;
   flex: 15;
+  max-width: 200px;
+  position: relative;
 }
 
 .appMainTitleContainer {
@@ -33,6 +35,46 @@
   flex-direction: column;
 }
 
+.appMainTitleContainer div {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.appMainTitleContainer div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-text-main);
+  animation: a-ltr-after 2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+  transform: translateX(-101%);
+}
+
+.appMainTitleContainer div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-text-second);
+  animation: a-ltr-before 2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+  transform: translateX(0);
+}
+
+.appMainTitleContainer div:nth-of-type(1)::before,
+.appMainTitleContainer div:nth-of-type(1)::after {
+  animation-delay: 0.25s;
+}
+
+.appMainTitleContainer div:nth-of-type(2)::before,
+.appMainTitleContainer div:nth-of-type(2)::after {
+  animation-delay: 0.5s;
+}
+
 .appMainTitle {
   color: var(--color-text-main);
   font-weight: 400;
@@ -40,6 +82,8 @@
   margin-bottom: 20px;
   font-family: 'Caramel', cursive;
   cursor: none;
+  padding: 0 50px;
+  white-space: nowrap;
 }
 
 .appMainText {
@@ -47,11 +91,13 @@
   font-weight: 400;
   font-size: 2.42vw;
   cursor: none;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .appMainAboutMe {
   margin-top: 80vh;
-
+  cursor: none;
   position: relative;
 }
 
@@ -61,6 +107,7 @@
   font-weight: 400;
   font-size: 1.8vw;
   z-index: 1;
+  cursor: none;
 }
 
 .appMainAboutMeMobileTitle {
@@ -74,16 +121,7 @@
   color: var(--color-text-main);
   opacity: 0.5;
   white-space: nowrap;
-}
-
-.appMainAboutMe:hover {
-  cursor: none;
-  display: flex;
-}
-
-.appMainAboutMeText:hover {
-  cursor: none;
-  font-size: 1.81vw;
+  display: none;
 }
 
 .appMainSkill {
@@ -91,6 +129,24 @@
   display: grid;
   width: 95%;
   grid-template-columns: repeat(5, 1fr);
+  position: relative;
+}
+
+.appMainSkillMobileTitle {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  font-weight: 900;
+  z-index: -2;
+  color: var(--color-text-main);
+  opacity: 0.5;
+  white-space: nowrap;
+  display: none;
+}
+.appMainSkillList {
+  position: relative;
 }
 
 .appMainSkillListTitle {
@@ -122,6 +178,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 80vh;
+  position: relative;
 }
 
 .appMainProjectItem {
@@ -130,16 +187,12 @@
   cursor: pointer;
 }
 
-.appMainProjectItem:hover {
-  transform: scale(1.02);
-}
-
 .anim {
   background-color: red;
   width: 100px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1450px) {
   .appMainSkill {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -155,6 +208,15 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 1300px) {
+  .appMainSkillListTitle {
+    font-size: 2.2vw;
+  }
+
+  .appMainSkillListItem {
+    font-size: 1.8vw;
+  }
+}
 
 @media only screen and (max-width: 1000px) {
   .appLeft,
@@ -164,6 +226,11 @@
   .appMainProjectContainer {
     width: calc(100% - 40px);
   }
+
+  .appMainAboutMeMobileTitle,
+  .appMainSkillMobileTitle {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -172,7 +239,7 @@
   }
 
   .appMainText {
-    font-size: 3.5vw;
+    font-size: 20px;
   }
 
   .appMainAboutMeText {
@@ -203,5 +270,25 @@
   .appMainSkillListTitle {
     font-size: 22px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .appMainSkillMobileTitle,
+  .appMainAboutMeMobileTitle {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .appMainProjectContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .appMainSkillMobileTitle,
+  .appMainAboutMeMobileTitle {
+    font-size: 36px;
   }
 }

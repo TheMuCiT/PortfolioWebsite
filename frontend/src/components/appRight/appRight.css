@@ -17,3 +17,9 @@
   font-size: 8.5vh;
   color: var(--color-text-second);
 }
+
+@media only screen and (max-width: 1300px) {
+  .appRightContainer {
+    right: 75px;
+  }
+}

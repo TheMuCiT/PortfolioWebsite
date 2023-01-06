@@ -1,0 +1,307 @@
+.mainPageWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mainPage {
+  width: 100%;
+
+  position: relative;
+  min-height: 52.5rem;
+  max-height: 90rem;
+}
+
+.mainPageBC {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.mainPageBcSVG {
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.4;
+}
+
+.mainPageContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90rem;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainPageTitle {
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 60px;
+  color: var(--color-text-title);
+  margin-bottom: 20px;
+}
+
+.mainPageText {
+  text-align: center;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 22px;
+  color: var(--color-text-main);
+}
+
+.mainPageButton {
+  margin-top: 40px;
+  padding: 15px 65px;
+
+  width: max-content;
+  background-color: var(--color-main);
+
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-title);
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+}
+
+.mainPageButton:hover {
+  transform: translateY(-3px);
+}
+
+.mainAbout {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainAboutTitle {
+  text-transform: uppercase;
+  color: var(--color-text-title);
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.mainLine {
+  width: 50px;
+  height: 5px;
+  background-color: var(--color-main);
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.mainAboutSectionText {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text-main);
+  margin: 5px 0 50px;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.mainAboutSectionTextLink {
+  font-weight: 600;
+  color: var(--color-main);
+  cursor: pointer;
+}
+
+.mainAboutContainer {
+  display: flex;
+  margin-top: 20px;
+  gap: 150px;
+  margin-bottom: 100px;
+}
+
+.mainAboutLeft {
+  flex: 1;
+  text-align: left;
+}
+
+.mainAboutRight {
+  flex: 1;
+  text-align: left;
+}
+
+.mainAboutLeftTitle {
+  color: var(--color-text-title);
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.mainAboutText {
+  color: var(--color-text-main);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.mainAboutSkills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainAboutSkillItem {
+  color: var(--color-text-main);
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #99999933;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 15px 15px 0;
+  cursor: none;
+}
+
+.mainAboutSkillItem:hover {
+  background-color: var(--color-main);
+}
+
+.mainProjectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 150px;
+}
+
+.mainProjectItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.mainProjectImage {
+  flex: 1;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.mainProjectTextContainer {
+  flex: 1;
+  text-align: left;
+}
+
+.mainProjectTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-text-title);
+}
+
+.mainProjectText {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: var(--color-text-main);
+  max-width: 70%;
+}
+
+.mainProjectButton {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 50px;
+  background-color: var(--color-main);
+  color: var(--color-text-title);
+  width: max-content;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.mainProjectButton:hover {
+  transform: translateY(-3px);
+}
+
+.appMainProjectItem {
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.appMainProjectItem:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 950px) {
+  .mainAboutContainer {
+    flex-direction: column;
+  }
+  .mainAboutLeft,
+  .mainAboutRight {
+    text-align: center;
+  }
+  .mainAboutSkills {
+    align-items: center;
+    justify-content: center;
+  }
+  .mainProjectItem {
+    flex-direction: column;
+  }
+  .mainProjectImage {
+    max-width: 750px;
+    height: 100%;
+    flex: auto;
+  }
+  .mainProjectTextContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .mainPageTitle {
+    font-size: 40px;
+  }
+  .mainPageText {
+    font-size: 18px;
+  }
+  .mainPageButton {
+    font-size: 16px;
+  }
+
+  .mainAboutTitle {
+    font-size: 36px;
+  }
+
+  .mainAboutSectionText {
+    font-size: 18px;
+  }
+
+  .mainAboutLeftTitle {
+    font-size: 21px;
+  }
+  .mainAboutText {
+    font-size: 16px;
+  }
+
+  .mainAboutSkillItem {
+    font-size: 12px;
+    margin: 7px;
+  }
+}

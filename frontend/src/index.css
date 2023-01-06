@@ -1,16 +1,16 @@
 :root {
   /*COLOR*/
   --color-background: red;
-  --color-navbar: red;
+  --color-navbar: rgb(255, 255, 255);
 
-  --color-main: red;
+  --color-main: #3aafa9;
   --color-main-second: red;
   --color-white: #ffffff;
   --color-box: red;
 
-  --color-text-main: #573434;
-  --color-text-second: rgb(218, 194, 151);
-  --color-text-title: orange;
+  --color-text-main: #333;
+  --color-text-second: #3aafa9;
+  --color-text-title: #111;
 
   /*SIZE*/
   ---main-padding: 0px;
@@ -25,10 +25,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
+  align-items: center;
 }
 
 .red {
@@ -38,7 +39,6 @@ body {
 .componentFirst {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
   position: relative;
   overflow: hidden;
 }
@@ -50,8 +50,59 @@ body {
   margin: 0 50px;
 }
 
-@media only screen and (max-width: 670px) {
+.ScrollToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ScrollToTopSVG {
+  padding: 10px;
+  transform: rotate(-90deg);
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.ScrollToTop:hover .ScrollToTopSVG {
+  transform: translateY(-5px) rotate(-90deg);
+}
+
+@media only screen and (max-width: 620px) {
+  .componentSecond {
+    margin: 0 25px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
+  .ScrollToTop {
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
+@keyframes a-ltr-after {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(101%);
+  }
+}
+
+@keyframes a-ltr-before {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
 }

@@ -21,7 +21,7 @@ const HomePage = () => {
       <div className='appMain'>
         <div className='appMainTitleContainer'>
           <div className='appMainTitle'>Karolis Vilimas</div>
-          <div className='appMainText'>Full-Stack React native and React JS developer</div>
+          <div className='appMainText'>Full-Stack React Native and React JS developer</div>
         </div>
 
         <div className='appMainAboutMe'>
@@ -35,6 +35,7 @@ const HomePage = () => {
         </div>
 
         <div className='appMainSkill'>
+          <div className='appMainSkillMobileTitle'>SKILLS</div>
           <div className='appMainSkillList'>
             <div className='appMainSkillListTitle'>I’m Working With</div>
             <div className='appMainSkillListItem'>React Native</div>
@@ -97,6 +98,9 @@ const HomePage = () => {
             className='appMainProjectItem'
             onClick={() => goToProject(5)}
           />
+          <div className='appMainSkillMobileTitle' style={{ top: '-10%' }}>
+            PORTFOLIO
+          </div>
         </div>
       </div>
       <div className='appRight'>

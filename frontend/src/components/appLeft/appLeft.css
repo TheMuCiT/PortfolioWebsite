@@ -32,3 +32,9 @@
   width: 3.1vw;
   min-width: 50px;
 }
+
+@media only screen and (max-width: 1300px) {
+  .appLeftContainer {
+    left: 75px;
+  }
+}

@@ -4,35 +4,35 @@
     "title": "Bakish",
     "supTitle": "Breed Shop Mobile Application",
     "about": "Bakish is the first mobile application I created by myself after I completed more than 5 production-ready applications through tutorials. For this project, I used all my gained knowledge to create an application for the small breed shop. This app is similar to bolt food or uber eats but concentrated in one shop. The design is created with a vision that it can be easily changed for a different shop. In this project, I just react native with typescript. I implemented AWS authentication, and amplify database. For data management, I use Apollo Client. To make it fully work I used a lot of additional packages such as React Navigation, Stripe, Cognito, days, google maps, google place autocomplete, and others.",
-    "pageSize": "220vh",
+    "pageSize": "200vh",
     "images": [
       {
-        "image": "../images/1.png",
+        "image": "../images/bakish1.png",
         "offset": 0,
         "sideLeft": true,
         "size": 50
       },
       {
-        "image": "../images/2.png",
+        "image": "../images/bakish2.png",
         "offset": "15%",
         "sideLeft": false,
         "size": 50
       },
       {
-        "image": "../images/3.png",
-        "offset": "35%",
+        "image": "../images/bakish3.png",
+        "offset": "40%",
         "sideLeft": true,
         "size": 50
       },
       {
-        "image": "../images/4.png",
+        "image": "../images/bakish4.png",
         "offset": "45%",
         "sideLeft": false,
         "size": 50
       },
       {
-        "image": "../images/1.png",
-        "offset": "55%",
+        "image": "../images/bakish5.png",
+        "offset": "60%",
         "sideLeft": true,
         "size": 50
       },
@@ -54,7 +54,38 @@
         "sideLeft": false,
         "size": 50
       }
-    ]
+    ],
+    "tools": [
+      {
+        "id": 0,
+        "tool": "React Native"
+      },
+      {
+        "id": 1,
+        "tool": "GitHub"
+      },
+      {
+        "id": 2,
+        "tool": "TypeScript"
+      },
+      {
+        "id": 3,
+        "tool": "AWS"
+      },
+      {
+        "id": 4,
+        "tool": "Apollo"
+      },
+      {
+        "id": 5,
+        "tool": "CI/CD Pipeline"
+      },
+      {
+        "id": 6,
+        "tool": "EAS Expo"
+      }
+    ],
+    "LinkTo": "https://github.com/TheMuCiT/Bakish"
   },
   {
     "id": 2,
@@ -64,7 +95,7 @@
     "linkTitle": "You can view the app in Google Play",
     "link": "https://play.google.com/store/apps/details?id=com.personaltouchlt.pawpawtracker",
     "linkText": "Google Play",
-    "pageSize": "180vh",
+    "pageSize": "130vh",
     "images": [
       {
         "image": "../images/paw1.png",
@@ -80,23 +111,50 @@
       },
       {
         "image": "../images/paw3.png",
-        "offset": "45%",
+        "offset": "70%",
         "sideLeft": true,
         "size": 50
       },
       {
         "image": "../images/paw4.png",
-        "offset": "50%",
+        "offset": "80%",
         "sideLeft": false,
         "size": 50
       },
       {
         "image": "../images/paw5.png",
-        "offset": "70%",
+        "offset": "95%",
         "sideLeft": true,
         "size": 50
       }
-    ]
+    ],
+    "tools": [
+      {
+        "id": 0,
+        "tool": "React Native"
+      },
+      {
+        "id": 1,
+        "tool": "GitHub"
+      },
+      {
+        "id": 2,
+        "tool": "TypeScript"
+      },
+      {
+        "id": 3,
+        "tool": "Google Play"
+      },
+      {
+        "id": 4,
+        "tool": "CI/CD Pipeline"
+      },
+      {
+        "id": 5,
+        "tool": "EAS Expo"
+      }
+    ],
+    "LinkTo": "https://play.google.com/store/apps/details?id=com.personaltouchlt.pawpawtracker"
   },
   {
     "id": 3,
@@ -106,54 +164,73 @@
     "pageSize": "220vh",
     "images": [
       {
-        "image": "../images/1.png",
+        "image": "../images/runo1.png",
         "offset": 0,
         "sideLeft": true,
         "size": 50
       },
       {
-        "image": "../images/2.png",
+        "image": "../images/runo2.png",
         "offset": "15%",
         "sideLeft": false,
         "size": 50
       },
       {
-        "image": "../images/3.png",
+        "image": "../images/runo3.png",
         "offset": "35%",
         "sideLeft": true,
         "size": 50
       },
       {
-        "image": "../images/4.png",
+        "image": "../images/runo4.png",
         "offset": "45%",
         "sideLeft": false,
         "size": 50
       },
       {
-        "image": "../images/1.png",
+        "image": "../images/runo5.png",
         "offset": "55%",
         "sideLeft": true,
         "size": 50
       },
       {
-        "image": "../images/2.png",
+        "image": "../images/runo6.png",
         "offset": "65%",
         "sideLeft": false,
         "size": 50
       },
       {
-        "image": "../images/3.png",
+        "image": "../images/runo7.png",
         "offset": "75%",
         "sideLeft": true,
         "size": 50
       },
       {
-        "image": "../images/4.png",
+        "image": "../images/runo8.png",
         "offset": "90%",
         "sideLeft": false,
         "size": 50
       }
-    ]
+    ],
+    "tools": [
+      {
+        "id": 0,
+        "tool": "React Native"
+      },
+      {
+        "id": 1,
+        "tool": "GitHub"
+      },
+      {
+        "id": 2,
+        "tool": "CI/CD Pipeline"
+      },
+      {
+        "id": 3,
+        "tool": "EAS Expo"
+      }
+    ],
+    "LinkTo": "https://github.com/TheMuCiT"
   },
   {
     "id": 4,
@@ -163,33 +240,72 @@
     "linkTitle": "You can view the website",
     "link": "https://stoties10.lt/",
     "linkText": "View",
-    "pageSize": "160vh",
+    "pageSize": "130vh",
     "images": [
       {
         "image": "../images/stoties1.png",
-        "offset": 0,
+        "offset": "0%",
         "sideLeft": true,
         "size": 100
       },
       {
         "image": "../images/stoties2.png",
-        "offset": "25%",
+        "offset": "32%",
         "sideLeft": false,
         "size": 80
       },
       {
         "image": "../images/stoties3.png",
-        "offset": "57%",
+        "offset": "60%",
         "sideLeft": true,
         "size": 100
       },
       {
         "image": "../images/stoties4.png",
-        "offset": "85%",
+        "offset": "95%",
         "sideLeft": false,
         "size": 100
       }
-    ]
+    ],
+    "tools": [
+      {
+        "id": 0,
+        "tool": "React JS"
+      },
+      {
+        "id": 1,
+        "tool": "GitHub"
+      },
+      {
+        "id": 2,
+        "tool": "Figma"
+      },
+      {
+        "id": 3,
+        "tool": "Local Database"
+      },
+      {
+        "id": 4,
+        "tool": "Hostinger"
+      },
+      {
+        "id": 5,
+        "tool": "SVG Animation"
+      },
+      {
+        "id": 6,
+        "tool": "Responsive & Adaptive Design"
+      },
+      {
+        "id": 7,
+        "tool": "HTML"
+      },
+      {
+        "id": 8,
+        "tool": "Css"
+      }
+    ],
+    "LinkTo": "https://stoties10.lt/"
   },
   {
     "id": 5,
@@ -199,17 +315,17 @@
     "linkTitle": "You can view the website",
     "link": "https://imo-invest.com/",
     "linkText": "View",
-    "pageSize": "160vh",
+    "pageSize": "130vh",
     "images": [
       {
         "image": "../images/imo0.png",
-        "offset": 0,
+        "offset": "0%",
         "sideLeft": true,
         "size": 100
       },
       {
         "image": "../images/imo1.png",
-        "offset": "30%",
+        "offset": "32%",
         "sideLeft": false,
         "size": 100
       },
@@ -221,11 +337,46 @@
       },
       {
         "image": "../images/imo3.png",
-        "offset": "80%",
+        "offset": "95%",
         "sideLeft": false,
         "size": 100
       }
-    ]
+    ],
+    "tools": [
+      {
+        "id": 0,
+        "tool": "React JS"
+      },
+      {
+        "id": 1,
+        "tool": "APIs"
+      },
+      {
+        "id": 2,
+        "tool": "Animation"
+      },
+      {
+        "id": 3,
+        "tool": "Multilingual"
+      },
+      {
+        "id": 4,
+        "tool": "Custom Charts"
+      },
+      {
+        "id": 5,
+        "tool": "Responsive & Adaptive Design"
+      },
+      {
+        "id": 6,
+        "tool": "HTML"
+      },
+      {
+        "id": 7,
+        "tool": "Css"
+      }
+    ],
+    "LinkTo": "https://imo-invest.com/"
   },
   {
     "id": 6,
@@ -235,33 +386,64 @@
     "linkTitle": "You can view websites",
     "link": "https://pandalan-hukuk.netlify.app/",
     "linkText": "View",
-    "pageSize": "150vh",
+    "pageSize": "130vh",
     "more": true,
     "images": [
       {
         "image": "../images/panda1.png",
-        "offset": 0,
+        "offset": "0%",
         "sideLeft": true,
         "size": 100
       },
       {
         "image": "../images/panda2.png",
-        "offset": "25%",
+        "offset": "32%",
         "sideLeft": false,
         "size": 100
       },
       {
         "image": "../images/panda3.png",
-        "offset": "50%",
+        "offset": "60%",
         "sideLeft": true,
         "size": 100
       },
       {
         "image": "../images/panda3.png",
-        "offset": "75%",
+        "offset": "95%",
         "sideLeft": true,
         "size": 100
       }
-    ]
+    ],
+    "tools": [
+      {
+        "id": 0,
+        "tool": "React JS"
+      },
+      {
+        "id": 1,
+        "tool": "GitHub"
+      },
+      {
+        "id": 2,
+        "tool": "HTML"
+      },
+      {
+        "id": 3,
+        "tool": "Css"
+      },
+      {
+        "id": 4,
+        "tool": "JavaScript"
+      },
+      {
+        "id": 5,
+        "tool": "Animation"
+      },
+      {
+        "id": 6,
+        "tool": "Figma"
+      }
+    ],
+    "LinkTo": "https://github.com/TheMuCiT"
   }
 ]
