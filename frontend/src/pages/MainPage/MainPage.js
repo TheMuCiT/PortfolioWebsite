@@ -38,7 +38,7 @@ const MainPage = () => {
           <div className='mainPage'>
             <div className='mainPageContainer'>
               <div className='mainPageTitle'>Karolis Vilimas</div>
-              <div className='mainPageText'>Full-Stack React native and React JS developer</div>
+              <div className='mainPageText'>Full-Stack React Native and React JS developer</div>
               <div className='mainPageButton' onClick={scrollToProject}>
                 projects
               </div>
