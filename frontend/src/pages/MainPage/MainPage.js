@@ -1,15 +1,17 @@
 import React from 'react'
 
+import { useNavigate } from 'react-router-dom'
 import { ReactComponent as BackgroundSVG } from '../../icons/BackgroundSVG.svg'
 
+import data from '../../assets/data/portfolio.json'
+
 import './mainPage.css'
-import { useNavigate } from 'react-router-dom'
 
 const MainPage = () => {
   const navigate = useNavigate()
 
   const goToProject = (id) => {
-    navigate(`../projectV2/${id}`)
+    navigate(`../project/${id}`)
   }
 
   const goToGitHub = () => {
@@ -111,14 +113,11 @@ const MainPage = () => {
             <div className='mainProjectContainer'>
               <div className='mainProjectItem'>
                 <div className='mainProjectImage'>
-                  <img src={'./images/light.png'} alt='' className='appMainProjectItem' />
+                  <img src={'./images/light.webp'} alt='' className='appMainProjectItem' />
                 </div>
                 <div className='mainProjectTextContainer'>
-                  <div className='mainProjectTitle'>Bakish</div>
-                  <div className='mainProjectText'>
-                    Breed Shop Mobile Application Breed Shop Mobile Application Breed Shop Mobile Application Breed
-                    Shop Mobile Application Breed Shop Mobile Application Breed Shop Mobile Application
-                  </div>
+                  <div className='mainProjectTitle'>{data[0].title}</div>
+                  <div className='mainProjectText'>{data[0].supTitle}</div>
                   <div className='mainProjectButton' onClick={() => goToProject(0)}>
                     View project
                   </div>
@@ -126,11 +125,11 @@ const MainPage = () => {
               </div>
               <div className='mainProjectItem'>
                 <div className='mainProjectImage'>
-                  <img src={'./images/pawIntro.png'} alt='' className='appMainProjectItem' />
+                  <img src={'./images/pawIntro.webp'} alt='' className='appMainProjectItem' />
                 </div>
                 <div className='mainProjectTextContainer'>
-                  <div className='mainProjectTitle'>PawPaw Pet Age Tracker</div>
-                  <div className='mainProjectText'>Breed Shop Mobile Application</div>
+                  <div className='mainProjectTitle'>{data[1].title}</div>
+                  <div className='mainProjectText'>{data[1].supTitle}</div>
                   <div className='mainProjectButton' onClick={() => goToProject(1)}>
                     View project
                   </div>
@@ -139,11 +138,11 @@ const MainPage = () => {
 
               <div className='mainProjectItem'>
                 <div className='mainProjectImage'>
-                  <img src={'./images/dark.png'} alt='' className='appMainProjectItem' />
+                  <img src={'./images/dark.webp'} alt='' className='appMainProjectItem' />
                 </div>
                 <div className='mainProjectTextContainer'>
-                  <div className='mainProjectTitle'>Runo</div>
-                  <div className='mainProjectText'>Breed Shop Mobile Application</div>
+                  <div className='mainProjectTitle'>{data[2].title}</div>
+                  <div className='mainProjectText'>{data[2].supTitle}</div>
                   <div className='mainProjectButton' onClick={() => goToProject(2)}>
                     View project
                   </div>
@@ -152,11 +151,11 @@ const MainPage = () => {
 
               <div className='mainProjectItem'>
                 <div className='mainProjectImage'>
-                  <img src={'./images/stotiesIntro.png'} alt='' className='appMainProjectItem' />
+                  <img src={'./images/stotiesIntro.webp'} alt='' className='appMainProjectItem' />
                 </div>
                 <div className='mainProjectTextContainer'>
-                  <div className='mainProjectTitle'>Stoties 10</div>
-                  <div className='mainProjectText'>Breed Shop Mobile Application</div>
+                  <div className='mainProjectTitle'>{data[3].title}</div>
+                  <div className='mainProjectText'>{data[3].supTitle}</div>
                   <div className='mainProjectButton' onClick={() => goToProject(3)}>
                     View project
                   </div>
@@ -165,11 +164,11 @@ const MainPage = () => {
 
               <div className='mainProjectItem'>
                 <div className='mainProjectImage'>
-                  <img src={'./images/imoIntro.png'} alt='' className='appMainProjectItem' />
+                  <img src={'./images/imoIntro.webp'} alt='' className='appMainProjectItem' />
                 </div>
                 <div className='mainProjectTextContainer'>
-                  <div className='mainProjectTitle'>IMO Invest</div>
-                  <div className='mainProjectText'>Breed Shop Mobile Application</div>
+                  <div className='mainProjectTitle'>{data[4].title}</div>
+                  <div className='mainProjectText'>{data[4].supTitle}</div>
                   <div className='mainProjectButton' onClick={() => goToProject(4)}>
                     View project
                   </div>
@@ -178,11 +177,11 @@ const MainPage = () => {
 
               <div className='mainProjectItem'>
                 <div className='mainProjectImage'>
-                  <img src={'./images/pandaIntro.png'} alt='' className='appMainProjectItem' />
+                  <img src={'./images/pandaIntro.webp'} alt='' className='appMainProjectItem' />
                 </div>
                 <div className='mainProjectTextContainer'>
-                  <div className='mainProjectTitle'>Pandalan</div>
-                  <div className='mainProjectText'>Breed Shop Mobile Application</div>
+                  <div className='mainProjectTitle'>{data[5].title}</div>
+                  <div className='mainProjectText'>{data[5].supTitle}</div>
                   <div className='mainProjectButton' onClick={() => goToProject(5)}>
                     View project
                   </div>

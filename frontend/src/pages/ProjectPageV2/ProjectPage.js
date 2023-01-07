@@ -70,7 +70,7 @@ const ProjectPage = () => {
           <div className='mainPage'>
             <div className='mainPageContainer'>
               <div className='mainPageTitle'>{data[id].title}</div>
-              <div className='mainPageText'>Full-Stack React native and React JS developer</div>
+              <div className='mainPageText'>{data[id].supTitle}</div>
               <div className='mainPageButton' onClick={viewProject}>
                 View Project
               </div>

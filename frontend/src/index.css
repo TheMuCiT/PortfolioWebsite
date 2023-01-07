@@ -76,9 +76,44 @@ body {
   transform: translateY(-5px) rotate(-90deg);
 }
 
+.MainContact {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  background-color: var(--color-white);
+  transform: translateY(-50%);
+  padding: 20px 5px;
+  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+}
+
+.MainContactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.MainContactIcon {
+  padding: 10px 5px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.MainContactIcon path {
+  fill: var(--color-text-title);
+}
+
+.MainContactIcon:hover path {
+  fill: var(--color-main);
+}
+
 @media only screen and (max-width: 620px) {
   .componentSecond {
     margin: 0 25px;
+  }
+
+  .MainContact {
+    display: none;
   }
 }
 

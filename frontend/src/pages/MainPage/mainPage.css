@@ -54,6 +54,7 @@
   text-align: center;
   font-size: 22px;
   color: var(--color-text-main);
+  max-width: 750px;
 }
 
 .mainPageButton {

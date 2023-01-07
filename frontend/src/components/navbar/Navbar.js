@@ -29,42 +29,42 @@ const Navbar = () => {
   }
 
   const goHome = () => {
-    navigate('/v2')
+    navigate('/')
   }
 
   const handleHome = () => {
     setMobile(false)
     var pathname = window.location.pathname
-    if (pathname === '/v2') {
+    if (pathname === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     } else {
-      navigate('/v2')
+      navigate('/')
     }
   }
 
   const handleAbout = () => {
     setMobile(false)
     var pathname = window.location.pathname
-    if (pathname === '/v2') {
+    if (pathname === '/') {
       let home = document.getElementsByClassName('scrollToAbout')
 
       window.scrollTo({ top: home[0].offsetTop - 100, behavior: 'smooth' })
     } else {
       // go to main screen
-      navigate('/v2')
+      navigate('/')
     }
   }
 
   const handleProject = () => {
     setMobile(false)
     var pathname = window.location.pathname
-    if (pathname === '/v2') {
+    if (pathname === '/') {
       let home = document.getElementsByClassName('scrollToProject')
 
       window.scrollTo({ top: home[0].offsetTop - 100, behavior: 'smooth' })
     } else {
       // go to main screen
-      navigate('/v2')
+      navigate('/')
     }
   }
 
