@@ -160,7 +160,7 @@
     "id": 3,
     "title": "Runo coffee",
     "supTitle": "Mobile application specialization to the coffee shop with main CRUD functionality, AWS database, and authentication. ",
-    "about": "",
+    "about": "Runo coffee is a mobile application created for coffee shop. For the project, I work on the frontend side, by making all the UI components, and implementing navigation, stripe, and responsive design.",
     "pageSize": "220vh",
     "images": [
       {
@@ -228,6 +228,18 @@
       {
         "id": 3,
         "tool": "EAS Expo"
+      },
+      {
+        "id": 4,
+        "tool": "Stripe"
+      },
+      {
+        "id": 5,
+        "tool": "UI Components"
+      },
+      {
+        "id": 6,
+        "tool": "Responsive design"
       }
     ],
     "LinkTo": "https://github.com/TheMuCiT"
