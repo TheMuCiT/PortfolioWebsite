@@ -53,6 +53,36 @@
         "offset": "90%",
         "sideLeft": false,
         "size": 50
+      },
+      {
+        "image": "../images/bakish6.webp",
+        "offset": "90%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/bakish7.webp",
+        "offset": "90%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/bakish8.webp",
+        "offset": "90%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/bakish9.webp",
+        "offset": "90%",
+        "sideLeft": false,
+        "size": 50
+      },
+      {
+        "image": "../images/bakish10.webp",
+        "offset": "90%",
+        "sideLeft": false,
+        "size": 50
       }
     ],
     "tools": [
