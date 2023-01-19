@@ -20,7 +20,6 @@ import { DataProvider } from './contexts/DataContext'
 import ReactGA from 'react-ga'
 const TRACKING_ID = 'G-GL4Z4KRZ31'
 ReactGA.initialize(TRACKING_ID)
-ReactGA.pageview(window.location.pathname + window.location.search)
 
 const App = () => {
   const ScrollTop = () => {
