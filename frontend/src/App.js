@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 import { ReactComponent as ArrowNext } from './icons/ArrowNext.svg'
@@ -17,6 +17,11 @@ import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import { DataProvider } from './contexts/DataContext'
 
+import ReactGA from 'react-ga'
+const TRACKING_ID = 'G-GL4Z4KRZ31'
+ReactGA.initialize(TRACKING_ID)
+ReactGA.pageview(window.location.pathname + window.location.search)
+
 const App = () => {
   const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -33,6 +38,10 @@ const App = () => {
   const handleLinkedIn = () => {
     window.open('https://www.linkedin.com/in/karolisvilimas/')
   }
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
 
   return (
     <DataProvider>
