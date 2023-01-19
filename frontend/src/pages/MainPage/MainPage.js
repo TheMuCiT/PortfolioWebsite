@@ -7,8 +7,6 @@ import data from '../../assets/data/portfolio.json'
 
 import './mainPage.css'
 
-import ReactGA from 'react-ga'
-
 const MainPage = () => {
   const navigate = useNavigate()
 
@@ -29,10 +27,6 @@ const MainPage = () => {
 
     window.scrollTo({ top: home[0].offsetTop - 100, behavior: 'smooth' })
   }
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search)
-  }, [])
 
   return (
     <>

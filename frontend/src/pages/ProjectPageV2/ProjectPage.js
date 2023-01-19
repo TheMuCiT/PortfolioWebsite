@@ -6,8 +6,6 @@ import { ReactComponent as ArrowNext } from '../../icons/ArrowNext.svg'
 
 import './projectPage.css'
 
-import ReactGA from 'react-ga'
-
 import data from '../../assets/data/portfolio.json'
 
 const ProjectPage = () => {
@@ -61,11 +59,6 @@ const ProjectPage = () => {
   }
 
   window.addEventListener('resize', WindowChange)
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search)
-    console.log(window.location.pathname + window.location.search)
-  }, [])
 
   return (
     <>
