@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { useNavigate } from 'react-router-dom'
 import { ReactComponent as BackgroundSVG } from '../../icons/BackgroundSVG.svg'
@@ -6,6 +6,8 @@ import { ReactComponent as BackgroundSVG } from '../../icons/BackgroundSVG.svg'
 import data from '../../assets/data/portfolio.json'
 
 import './mainPage.css'
+
+import ReactGA from 'react-ga4'
 
 const MainPage = () => {
   const navigate = useNavigate()
@@ -27,6 +29,10 @@ const MainPage = () => {
 
     window.scrollTo({ top: home[0].offsetTop - 100, behavior: 'smooth' })
   }
+
+  useEffect(() => {
+    ReactGA.event({ category: 'page', action: 'Main' })
+  }, [])
 
   return (
     <>

@@ -4,6 +4,8 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { ReactComponent as BackgroundSVG } from '../../icons/BackgroundSVG.svg'
 import { ReactComponent as ArrowNext } from '../../icons/ArrowNext.svg'
 
+import ReactGA from 'react-ga4'
+
 import './projectPage.css'
 
 import data from '../../assets/data/portfolio.json'
@@ -57,6 +59,10 @@ const ProjectPage = () => {
       setImageSize(window.innerHeight - 400)
     }
   }
+
+  useEffect(() => {
+    ReactGA.event({ category: 'page', action: window.location.pathname })
+  }, [])
 
   window.addEventListener('resize', WindowChange)
 
