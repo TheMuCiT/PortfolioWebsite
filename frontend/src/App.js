@@ -6,6 +6,7 @@ import { ReactComponent as ArrowNext } from './icons/ArrowNext.svg'
 import { ReactComponent as Upwork1SVG } from './icons/Upwork1.svg'
 import { ReactComponent as GitHub1SVG } from './icons/GitHub1.svg'
 import { ReactComponent as LinkedIn1SVG } from './icons/LinkedIn1.svg'
+import { ReactComponent as FiverrSVG } from './icons/Fiverr.svg'
 
 //import HomePage from './pages/homePage/HomePage'
 //import ProjectPage from './pages/ProjectPage/ProjectPage'
@@ -37,6 +38,10 @@ const App = () => {
     window.open('https://www.linkedin.com/in/karolisvilimas/')
   }
 
+  const handleFiverr = () => {
+    window.open('https://www.fiverr.com/karolismucit')
+  }
+
   return (
     <DataProvider>
       <BrowserRouter>
@@ -56,6 +61,7 @@ const App = () => {
         <Upwork1SVG className='MainContactIcon' onClick={handleUpwork} />
         <GitHub1SVG className='MainContactIcon' onClick={handleGitHub} />
         <LinkedIn1SVG className='MainContactIcon' onClick={handleLinkedIn} />
+        <FiverrSVG className='MainContactIcon' onClick={handleFiverr} />
       </div>
     </DataProvider>
   )
